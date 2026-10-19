@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f45">
+<meta name="description" content="Lista completa de artigos Plasti Borracha.">
+<title>Artigos · Plasti Borracha</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="artigos" data-root="">
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Plasti <b>Borracha</b></a>
+  <nav aria-label="Principal"><a href="index.html">Início</a><a href="artigos.html" aria-current="page">Artigos</a><a href="categorias.html">Categorias</a></nav>
+</header>
+<main class="shell">
+<section class="page-head"><p class="eyebrow">Catálogo completo</p><h1>Artigos</h1></section>
+<div class="filters"><label class="select wide"><span>Categoria</span><select id="catfilter"><option value="">Todas as categorias</option></select></label></div>
+  <div class="toolbar">
+    <label class="search"><span class="sr-only">Pesquisar</span><input id="q" type="search" placeholder="Pesquisar por referência ou descrição…" autocomplete="off"></label>
+    <label class="select"><span>Ordenar</span><select id="sort">
+      <option value="code">Referência</option>
+      <option value="desc">Descrição</option>
+      <option value="price-asc">Preço ↑</option>
+      <option value="price-desc">Preço ↓</option>
+      <option value="stock-desc">Stock ↓</option>
+    </select></label>
+    <label class="check"><input id="stockonly" type="checkbox"> Só com stock</label>
+    <label class="check"><input id="disc" type="checkbox"> Incluir descontinuados</label>
+  </div>
+  <p id="count" class="count" aria-live="polite"></p>
+  <div id="list" class="grid"></div>
+  <p id="empty" class="empty" hidden>Nenhum artigo encontrado.</p>
+  <div class="more"><button id="more" class="btn" hidden>Mostrar mais</button></div>
+  <dialog id="detail"></dialog>
+</main>
+<footer class="site-footer"><span>PLASTI BORRACHA / ARTIGOS</span><span id="offline-status"></span></footer>
+<script src="js/app.js" defer></script>
+</body>
+</html>

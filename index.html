@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f45">
+<meta name="description" content="Consulte os artigos Plasti Borracha por categoria.">
+<title>Início · Plasti Borracha</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home" data-root="">
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Plasti <b>Borracha</b></a>
+  <nav aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="artigos.html">Artigos</a><a href="categorias.html">Categorias</a></nav>
+</header>
+<main class="shell">
+<section class="hero">
+  <p class="eyebrow">Biblioteca de artigos</p>
+  <h1>Todos os <em>artigos.</em></h1>
+  <p class="lede">Consulte as referências Plasti Borracha, organizadas por categoria, com pesquisa instantânea e disponibilidade offline.</p>
+  <div class="hero-actions"><a class="btn primary" href="artigos.html">Ver todos os artigos</a><a class="btn" href="categorias.html">Ver categorias</a></div>
+  <dl class="stats" id="stats"></dl>
+</section>
+<section>
+  <div class="section-head"><h2>Principais categorias</h2><a href="categorias.html">Todas →</a></div>
+  <div id="cat-grid" class="cat-grid" data-limit="6"></div>
+</section>
+</main>
+<footer class="site-footer"><span>PLASTI BORRACHA / ARTIGOS</span><span id="offline-status"></span></footer>
+<script src="js/app.js" defer></script>
+</body>
+</html>
